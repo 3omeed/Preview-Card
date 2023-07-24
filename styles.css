@@ -130,10 +130,14 @@ h3 {
   }
   .info {
     padding: 10px;
+    border-radius: 0 0 10px 10px;
   }
   .photo {
     flex-basis: 0;
     height: 300px;
+  }
+  .photo img {
+    border-radius: 10px 10px 0 0;
   }
 
   .info h3 {
