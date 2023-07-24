@@ -1,199 +1,184 @@
 :root {
-    --main-color: hsl(158, 36%, 37%) ;
+  --main-color: hsl(158, 36%, 37%);
 }
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background-color: hsl(30, 38%, 92%);
-    font-family: 'Fraunces', serif;
-    font-family: 'Montserrat', sans-serif;
+  background-color: hsl(30, 38%, 92%);
+  font-family: 'Fraunces', serif;
+  font-family: 'Montserrat', sans-serif;
 }
 main {
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
 }
 .container {
-    width: 565px;
-    min-width: 300px;
-    max-width: 100%;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    justify-content: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  width: 565px;
+  min-width: 300px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .photo {
-    flex-basis: 50%;
-    object-fit: cover;
-    order: 1;
+  flex-basis: 50%;
+  object-fit: cover;
+  order: 1;
 }
 .photo img {
-    width: 100%;
-    height: 100%;
-    /* border-radius: 10px 0 0 10px; */
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
 }
-
-
 
 .info {
-    flex-basis: 50%;
-    order: 2;
-    text-align: left;
-    background-color: white;
-    padding: 30px;
-    /* border-radius: 0px 10px 10px 0px; */
+  flex-basis: 50%;
+  order: 2;
+  text-align: left;
+  background-color: white;
+  padding: 30px;
+  border-radius: 0px 10px 10px 0px;
 }
 .head {
-    color: hsl(228, 12%, 48%);
-    font-size: 12px;
-    margin-bottom: 20px;
-    letter-spacing: 4px;
+  color: hsl(228, 12%, 48%);
+  font-size: 12px;
+  margin-bottom: 20px;
+  letter-spacing: 4px;
 }
 h3 {
-    /* padding-right: 15px; */
-    font-family: 'Fraunces', serif;
-    font-size: 30px;
-    font-weight: 900;
-    color: black;
-    margin-bottom: 25px;
-    line-height: 1;
+  font-family: 'Fraunces', serif;
+  font-size: 30px;
+  font-weight: 900;
+  color: black;
+  margin-bottom: 25px;
+  line-height: 1;
 }
 .info p {
-    color: hsl(228, 12%, 48%);
-    font-size: 13px;
-    margin-bottom: 25px;
-    line-height: 1.6;
+  color: hsl(228, 12%, 48%);
+  font-size: 13px;
+  margin-bottom: 25px;
+  line-height: 1.6;
 }
 .info .prices {
-    display: flex;
-    margin-bottom: 30px;
-    align-items: center;
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
 }
 
 .info span#real-price {
-    color: var(--main-color);
-    font-size: 30px;
-    font-family: 'fraunces';
-    margin-right: 15px;
-    font-weight: 800;
+  color: var(--main-color);
+  font-size: 30px;
+  font-family: 'fraunces';
+  margin-right: 15px;
+  font-weight: 800;
 }
 .info span#prev-price {
-    color: #a1a0a7;
-    font-size: 12px;
-    font-weight: bold;
-    text-decoration: line-through;
-
+  color: #a1a0a7;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: line-through;
 }
 
 .submit {
-    position: relative;
+  position: relative;
 }
 
 .info input {
-    background-color: var(--main-color);
-    width: 100%;
-    height: 45px;
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-    text-align: center;
-    border: none;
-    font-size: 14px;
-    position: relative;
-    transition: 0.3s ease-out;
+  background-color: var(--main-color);
+  width: 100%;
+  height: 45px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  text-align: center;
+  border: none;
+  font-size: 14px;
+  position: relative;
+  transition: 0.3s ease-out;
 }
-.info  .submit i {
-    width: 20px;
-    height: 20px;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    z-index: 100;
-    transform: translate(-50%, -50%);
-
+.info .submit i {
+  width: 20px;
+  height: 20px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  z-index: 100;
+  transform: translate(-50%, -50%);
 }
 .info input:hover {
-    background-color: hsl(212, 21%, 14%);
+  background-color: hsl(212, 21%, 14%);
+  cursor: pointer;
 }
 
 @media (max-width: 767px) {
-    .container {
-        width: 365px;
-        flex-direction: column;
-    }
-    .info {
-        padding: 10px;
-    }
-    .photo {
-
-    }
-    .photo img {
-        height: 300px;
-
-    }
-    .info h3 {
-        font-size: 1.2rem;
-    }
-    .info p {
-        font-size: 0.7rem;
-    }
-    .info .prices #real-price{
-        font-size: 1.3rem;
-    }
-}
-@media (max-width: 424px) {
-    .container {
-        width: 300px;
-        flex-direction: column;
-    }
-    .info {
-        padding: 10px;
-    }
-    .photo {
-
-    }
-    .photo img {
-        height: 260px;
-
-    }
-    .info h3 {
-        font-size: 1.1rem;
-    }
-    .info p {
-        font-size: 0.6rem;
-    }
-    .info .prices #real-price{
-        font-size: 1.2rem;
-    }
-}
-
-
-
-.attribution {
-    font-size: 11px;
-    text-align: center;
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-  .attribution a {
-    color: hsl(228, 45%, 44%);
+  .container {
+    width: 365px;
+    flex-direction: column;
+  }
+  .info {
+    padding: 10px;
+  }
+  .photo {
+    flex-basis: 0;
+    height: 300px;
   }
 
+  .info h3 {
+    font-size: 1.2rem;
+  }
+  .info p {
+    font-size: 0.7rem;
+  }
+  .info .prices #real-price {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 424px) {
+  .container {
+    width: 300px;
+    flex-direction: column;
+  }
+  .info {
+    padding: 10px;
+  }
+  .photo {
+    flex-basis: 0;
+    height: 260px;
+  }
 
+  .info h3 {
+    font-size: 1.1rem;
+  }
+  .info p {
+    font-size: 0.6rem;
+  }
+  .info .prices #real-price {
+    font-size: 1.2rem;
+  }
+}
 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
